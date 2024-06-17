@@ -4,14 +4,11 @@ $username = "u5dul0ragmt3ld";
 $password = "pbf4e9e4739e8e21661d2b1236d1d8e7c9fdf1317059315805ab445ddd5ca1cae";
 $dbname = "d67sgvu0glgh9h";
 
-
 try {
     $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // Set PDO attributes as needed
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully"; // Replace with your application logic
 } catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());
-
-    
 }
 ?>
