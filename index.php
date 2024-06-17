@@ -15,7 +15,7 @@ include __DIR__ . '/includes/db/db.php';
             $queryStartTime = microtime(true);
 
             // Optimize query to fetch only required columns
-            $sql = "SELECT id, title, artist, price, image FROM paintings";
+            $sql = "SELECT id, name, price, image_url FROM paintings";
             $stmt = $pdo->query($sql);
 
             // Log the time taken for the query
