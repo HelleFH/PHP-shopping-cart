@@ -1,8 +1,8 @@
 <?php
-$servername = "c5flugvup2318r.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com";
-$username = "ua7no6ttg991k";
-$password = "p4eee94d0aa48027c48a3174b756d1025704bedd4088aac50887be21b1ac4a2c3";
-$dbname = "daobrnh15fiqcm";
+$servername = "c8lj070d5ubs83.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com";
+$username = "u5dul0ragmt3ld";
+$password = "pbf4e9e4739e8e21661d2b1236d1d8e7c9fdf1317059315805ab445ddd5ca1cae";
+$dbname = "d67sgvu0glgh9h";
 
 
 try {
