@@ -1,18 +1,15 @@
 <?php
-$connection_string = "postgres://render_postgres_x399_user:giIeg82cPpiHrSQgjiBViF2olC30BUyQ@dpg-cpnujd6ehbks738e1pmg-a.oregon-postgres.render.com/render_postgres_x399";
+$servername = "c5flugvup2318r.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com";
+$username = "ua7no6ttg991k";
+$password = "p4eee94d0aa48027c48a3174b756d1025704bedd4088aac50887be21b1ac4a2c3";
+$dbname = "daobrnh15fiqcm";
+
 
 try {
-    $pdo = new PDO($connection_string);
+    $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // Set PDO attributes as needed
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    // Proceed with your SQL queries here
-    $sql = "SELECT * FROM your_table";
-    $stmt = $pdo->query($sql);
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        // Process each row
-    }
-
 } catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+    die("Connection failed: " . $e->getMessage());
 }
 ?>
