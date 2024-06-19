@@ -1,6 +1,6 @@
 <?php
 // Connection URL from Heroku environment variable or wherever it's set
-$dsn = "pgsql:host=c8lj070d5ubs83.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com;port=5432;dbname=d67sgvu0glgh9h;user=u5dul0ragmt3ld;password=pbf4e9e4739e8e21661d2b1236d1d8e7c9fdf1317059315805ab445ddd5ca1cae";
+$dsn = "pgsql:host=c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com;port=5432;dbname=d6ft6ovefh5c8t;user=u3caqsh7sjg974;password=p6d781e204e6c6931b231718965b7d0435add46a942930f6ccd9266a64d8ec304";
 
 try {
     // Create a new PDO instance
